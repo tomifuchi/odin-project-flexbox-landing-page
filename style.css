@@ -27,7 +27,7 @@
     --info-header-text-color: #1F2937;
     /** Quote **/
     --quote-bgc: #E5E7EB;
-    --quote-text-size: 36px;
+    --quote-text-size: 1.5rem; /* Change from 36px to 1.5rem */
     --quote-text-weight: light;
     --quote-text-style: italic;
     --quote-text-color: #1F2937;
@@ -91,7 +91,7 @@ nav li:hover{
 
 /* Main */
 main > * > * {
-    max-width: 1100px;
+    max-width: 1140px;
     margin: 0 auto;
 }
 
@@ -116,8 +116,12 @@ section.hero{
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
-    gap: 20px;
-    width: clamp(300px, 60%, 500px);
+    gap: 25px;
+    width: clamp(300px, 60%, 600px);
+}
+
+.hero-container p{
+    line-height: 1.5;
 }
 
 .hero-container .hero-text button{
@@ -257,12 +261,13 @@ section.cta{
 
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    align-items: center;
     padding: 30px;
     gap: 20px;
 }
 
 .cta-container .cta-button{
+    flex-shrink: 0;
     margin-left: auto;
     margin-right: 2%;
 }
